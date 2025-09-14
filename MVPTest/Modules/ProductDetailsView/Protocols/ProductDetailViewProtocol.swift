@@ -1,5 +1,5 @@
 //
-//  MainViewProtocol.swift
+//  ProductDetailViewProtocol.swift
 //  MVPTest
 //
 //  Created by Илья Востров on 14.09.2025.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol MainViewProtocol: AnyObject {
+protocol ProductDetailViewProtocol: AnyObject {
+    func showProduct(_ product: Product)
     func showLoading()
     func hideLoading()
-    func updateLabel(text: String)
 }
